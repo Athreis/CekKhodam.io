@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="style.css">
+    
+<body class="bg-black">
+
+
+
+    <!-- css tambahaan buat gambar -->
+    <style>
+
+    .modal {
+            display: none; /* Sembunyikan modal awalnya */
+            position: fixed; /* Tetap di tengah layar */
+            z-index: 9999; /* Atur z-index agar di atas konten lain */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4); /* Background transparan */
+        }
+
+        .modal-content {
+            background-color: #b414ff;
+            margin: 15% auto; /* Posisi modal di tengah layar */
+            padding: 20px;
+            border-radius: 20px;
+            width: 80%; /* Lebar modal */
+            max-width: 600px; /* Lebar maksimum modal */
+            text-align: center;
+            color: white;
+            position: relative;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .close {
+            color: #ffffff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: rgb(192, 192, 192);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+
+
+
+
+
+    <div class="container pt-10">
+
+        <div class="flex justify-center">
+            <img src="kodam.png" alt="" class="h-[200px] w-[200px]  ">
+    
+        </div>
+    
+        <h1 class="text-purple-400 text-center  font-[700] text-[26px]">Cek Khodam disini Wir!</h1>
+        <p class="text-white text-center font-[500] text-[20px] italic opacity-[70%]">" Jawa adalah Koenji "</p>
+    
+    
+        <!-- user masukin nama  -->
+        <form action="" >
+    
+    
+            <div class="inputan pt-[40px] flex justify-center">
+    
+                <input type="text" autocomplete="off" name="Masukan nama" id="Username"  class="rounded-full w-[280px] h-[40px] pl-5 
+                bg-slate-50  
+                border-solid border-2 border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-slate-50">
+    
+            </div>
+           
+    
+    
+            <div class="tombol flex justify-center pt-[40px] ">
+                <button onclick="informasiKodam(event)" class="text-white font-bold  px-[30px] py-[9px] rounded-full bg-purple-500  focus:bg-purple-200  ">Cek Wir!</button>
+            </div>
+           
+
+            
+    
+    
+        </form>
+
+
+        <!-- Modal -->
+    <div id="modal" class="modal">
+        <!-- Konten Modal -->
+        <div class="modal-content">
+            <span class="close" onclick="tutupPopUp()">&times;</span>
+            <h3>Informasi Kodam</h3>
+            <p id="hasilKodam"></p>
+            <img id="gambarKodam" src="" alt="Gambar Kodam" class="w-full max-h-[400px] mb-4">
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</head>
+</body>
+</html>
