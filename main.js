@@ -1,16 +1,16 @@
 const namaKodam = [
-    { nama: "Naga Bearbend", gambar: "NagaBearben.png" },
-    { nama: "KING", gambar: "KING.png" },
-    { nama: "Sigma (Silit Nigga)", gambar: "SIGMA.png" },
-    { nama: "KEVIN LONTONG", gambar: "KEVIN.png" },
-    { nama: "Pudin", gambar: "PUDIN.png" },
-    { nama: "PEPSI", gambar: "PEPSI.png" },
-    { nama: "RATNA PENYU", gambar: "RATNA.png" },
-    { nama: "NANDA LEMON", gambar: "NANDA.png" },
-    { nama: "WALUYO", gambar: "WALUYO.png" },
-    { nama: "ASUBALAP", gambar: "ASUBALAP.png" },
-    { nama: "SINGKONG", gambar: "SINGKONG.png" },
-    { nama: "SIMILIKITI", gambar: "SIMILIKI.png" },
+    {  gambar: "NagaBearben.png" },
+    {  gambar: "KING.png" },
+    { gambar: "SIGMA.png" },
+    {  gambar: "KEVIN.png" },
+    {  gambar: "PUDIN.png" },
+    { gambar: "PEPSI.png" },
+    {  gambar: "RATNA.png" },
+    {  gambar: "NANDA.png" },
+    {  gambar: "WALUYO.png" },
+    {  gambar: "ASUBALAP.png" },
+    {  gambar: "SINGKONG.png" },
+    {  gambar: "SIMILIKI.png" },
 ];
 
 function PilihKodamAcak() {
@@ -27,7 +27,7 @@ function informasiKodam(event) {
     const modal = document.getElementById('modal');
     modal.style.display = 'block';
 
-    document.getElementById('hasilKodam').textContent = `${username}, nama kodam adalah ${kodamTerpilih.nama}`;
+    document.getElementById('hasilKodam').textContent = `${username}, nama kodamu adalah `;
     document.getElementById('gambarKodam').src = kodamTerpilih.gambar;
 }
 
